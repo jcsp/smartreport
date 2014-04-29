@@ -3,7 +3,8 @@ package smartreport
 
 /*
 #include <smartmontools/smart_report.h>
-#cgo LDFLAGS: -L/usr/local/lib -lsmartreport -lstdc++
+#cgo linux LDFLAGS: -L/usr/local/lib -lsmartreport -lstdc++
+#cgo darwin LDFLAGS: -L/usr/local/lib -lsmartreport -framework CoreFoundation -framework IOKit -lstdc++
 */
 import "C"
 
